@@ -1,6 +1,9 @@
-# tool-gulpcsswrap
-# 批量给css文件增加命名空间
-# 示例：
+# tool-gulpcsswrap [批量给css文件增加命名空间]
+# 说明：
+
+使用的是npm包[gulp-css-wrap](https://npm.taobao.org/package/gulp-css-wrap)
+
+[gulp使用指南](http://www.gulpjs.com.cn/docs/getting-started/)
 
 如我们给css文件的每个加上.custom-1b1e24类名
 
@@ -19,7 +22,7 @@
 # 运行：
 npm install
 
-npm run dev
+gulp css-wrap
 
 # P.S.
 
@@ -36,7 +39,7 @@ gulp.task('css-wrap', function () {
 			selector: '.custom-1b1e24' /* 添加的命名空间 */
 		}))
 		.pipe(cleanCSS())
-		.pipe(gulp.dest('src/assets/css/theme/1b1e24')) /* 存放的目录 */
+		.pipe(gulp.dest('assets/theme/1b1e24')) /* 存放的目录 */
 })
 ```
 
