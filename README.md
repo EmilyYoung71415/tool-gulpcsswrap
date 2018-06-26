@@ -19,10 +19,17 @@
 
 .custom-1b1e24 .content{color:#fff;}
 
+# 新增：
+
+1自定义生成的目标文件的名字和命名空间后面的色号
+如 FILENAME=000000 -> 生成的文件名字为 assets/theme/000000 生成的命名空间为.custom-000000
+2添加默认的任务 现:只需执行gulp命令即可进行编译(注意:生成的默认文件为assets/theme/1b1e24 命名空间为.custom-1b1e24)
+
 # 运行：
 npm install
 
-gulp css-wrap
+gulp 或 FILENAME = 000000 gulp
+
 
 # P.S.
 
